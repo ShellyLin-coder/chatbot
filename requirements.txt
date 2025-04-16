@@ -1,2 +1,7 @@
 streamlit
-openai
+google-generativeai
+pandas
+wordcloud
+matplotlib
+altair
+numpy
