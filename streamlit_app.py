@@ -16,6 +16,7 @@ MENU_OPTIONS = {
 }
 
 with st.sidebar:
+    st.image("UIC_logo.png", width=50)
     st.markdown("## 📚 Navigation")
     for page_id, page_label in MENU_OPTIONS.items():
         if st.button(page_label):
