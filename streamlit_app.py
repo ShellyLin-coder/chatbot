@@ -16,7 +16,9 @@ MENU_OPTIONS = {
 }
 
 with st.sidebar:
-    st.image("UIC_logo.png", width=50)
+    st.image("UIC_BUSINESS_LOGO.PNG", width=200)
+    st.image("Soultalk logo.png", width=80)
+    st.write("Detecting Suicidal Ideation and Depression in Real-Time Using a Conversational AI Trained on Reddit Dataset")
     st.markdown("## 📚 Navigation")
     for page_id, page_label in MENU_OPTIONS.items():
         if st.button(page_label):
@@ -27,6 +29,9 @@ with st.sidebar:
     st.markdown("---")  # Divider
     gemini_api_key = st.text_input("🔐 Gemini API Key", type="password", key="gemini_api")
     st.markdown("[Get Gemini API Key](https://makersuite.google.com/app/apikey)")
+
+
+
 
 # Initialize page status
 if "page" not in st.session_state:
@@ -222,6 +227,5 @@ elif selected_page == "Dashboard":
 
 
 # ---------------- Notice for Developers ----------------
-# Run "streamlit run Chatbot_0414.py" in the terminal to launch the UI
 # Dashboard - Username: localhost / Password: Demo1234 (Click login twice)
 
